@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: #fff;
+    font-family: 'Segoe UI', 'Roboto', arial, sans-serif;
+}
+a {
+    text-decoration: none;
+    color: rgb(20, 20, 20);
+}
+.wrapper {
+    display: flex;
+    width: 42%;
+    height: 75%;
+    align-items: center;
+    flex-direction: column;
+    user-select: none;
+}
+.right {
+    position: absolute;
+    right: 15px;
+}
+.shortcuts {
+    top: 100px;
+    display: inline-flex;
+    align-items: center;
+}
+    .shortcuts ul {
+        margin-right: 30px;
+        color: yellow;
+        font-size: 13px;
+    }
+    .shortcuts ul li {
+        display: inline-block;
+        color: rgb(77, 77, 77);
+
+    }
+    .shortcuts ul li:nth-child(1) {
+        margin-right: 15px;
+    }
+    .grade-menu {
+        margin-right: 20px;
+    }
+    .avatar img {
+        width: 30px;
+        height: 30px;
+
+}
+.border-50 {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.logo {
+    width: 100%;
+    height: 25%;
+    background-image: url('../img/google-logo.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.search-input{
+    width: 100%;
+    height: 44px;
+    margin-top: 40px;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 5px rgba(182, 181, 181, 0.959);
+    border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+
+}
+    .search-input input {
+        width: 84%;
+        height: 100%;
+        outline: none;
+        border: none;
+        font-size: 15px;
+        letter-spacing: 1px;
+        color: rgb(20, 20, 20);
+    }
+    .input[placeholder] {
+        color: rgba(255,255,255,.5);
+    }
+    
+    .search-icon,
+    .microphone-icon {
+        width: 40px;
+        font-size: 15px;
+        text-align: center;
+        color: rgba(46, 46, 46, 0.5);
+    }
+    .microphone-icon {
+        cursor: pointer;
+    }
+.user-icons {
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+    .user-box {
+        width: 110px;
+        height: 120px;
+        background-color: transparent;
+    }
+    .user-box a div.inner{
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 10px 0 10px 0;
+        font-size: 13px;
+        color: rgb(77, 77, 77);
+        border-radius: 4px;
+        font-weight: 600;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+    }
+    .inner:hover {
+        background-color: rgb(241, 241, 241);
+    }
+    .inner:hover .padding {
+        background-color: rgb(226, 226, 226);
+
+    }
+    .inner .padding {
+        padding: 10px;
+        background-color: rgb(240, 240, 240);
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+    .inner .favicon{
+        display: flex;
+        width: 25px;
+        height: 25px;
+        align-items: center;
+        justify-content: center;  
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .favicon i {
+        font-size: 17px;
+        color: rgb(49, 49, 49);
+    }
+    
+    .one, 
+    .two {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 5px;
+    }
+    .one {
+        margin-bottom: 10px;
+}
+.customize {
+    width: 122.33px;
+    bottom: 16px;
+    background-color: #fff;
+    color: rgb(48, 125, 187);
+    padding: 8px 13px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 1px 2px rgba(0, 0, 0, .23);
+    font-size: 14px;
+    border-radius: 500px;
+    cursor: pointer;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    -ms-border-radius: 500px;
+    -o-border-radius: 500px;
+}
+    .customize p {
+        display: inline;
+        font-weight: 400;
+    }
+    .customize:hover {
+        background-color: rgba(66, 141, 202, 0.137);
+        transition: .1s ease-in;
+        -webkit-transition: .1s ease-in;
+        -moz-transition: .1s ease-in;
+        -ms-transition: .1s ease-in;
+        -o-transition: .1s ease-in;
+}
+/* FAVICON BACKGROUNDS*/
+.a {background-image: url(../img/facebook.png)}
+.b {background-image: url(../img/gmail.png)}
+.c {background-image: url(../img/imasters-logo.png)}
+.d {background-image: url(../img/twitter.png)}
+.e {background-image: url(../img/youtube.png)}
+.f {background-image: url(../img/linkedin.png)}
+.g {background-image: url(../img/hangouts-do-google.svg)}
+.h {background-image: url(../img/google-drive.svg)}
+.i {background-image: url(../img/logo.png)}
+
+@media (max-width: 600px) {
+    .wrapper {
+        width: 90%;
+    }
+}
